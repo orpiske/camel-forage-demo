@@ -56,30 +56,14 @@
             <scope>runtime</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-langchain4j-agent-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-langchain4j-agent</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-langchain4j-tools</artifactId>
-        </dependency>
+        <!--This component adds a simple agent implementation -->
         <dependency>
             <groupId>org.apache.camel.forage</groupId>
             <artifactId>simple-agent</artifactId>
             <version>${camel-forage-version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.camel.forage</groupId>
-            <artifactId>simple-agent</artifactId>
-            <version>${camel-forage-version}</version>
-        </dependency>
-
+        <!--This component provides support for the message window chat memory -->
         <dependency>
             <groupId>org.apache.camel.forage</groupId>
             <artifactId>message-window</artifactId>
@@ -136,6 +120,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <dependencies>
+                <!--This component provides support for models hosted in Ollama -->
                 <dependency>
                     <groupId>org.apache.camel.forage</groupId>
                     <artifactId>ollama</artifactId>
@@ -149,6 +134,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <dependencies>
+                <!--This component provides support for the Google Gemini family of models-->
                 <dependency>
                     <groupId>org.apache.camel.forage</groupId>
                     <artifactId>google</artifactId>
