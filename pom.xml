@@ -64,14 +64,7 @@
         <!--This component adds a simple agent implementation -->
         <dependency>
             <groupId>org.apache.camel.forage</groupId>
-            <artifactId>forage-agent-memory-aware</artifactId>
-            <version>${camel-forage-version}</version>
-        </dependency>
-
-        <!--This component provides support for the message window chat memory -->
-        <dependency>
-            <groupId>org.apache.camel.forage</groupId>
-            <artifactId>forage-memory-message-window</artifactId>
+            <artifactId>forage-agent-memoryless</artifactId>
             <version>${camel-forage-version}</version>
         </dependency>
 

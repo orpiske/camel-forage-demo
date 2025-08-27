@@ -15,13 +15,11 @@ public class MyRouteBuilder extends RouteBuilder {
     public void configure() {
         from("timer:startup?delay=2000&repeatCount=1")
                 .setBody(constant("My name is Alice"))
-                .setHeader(Headers.MEMORY_ID, constant(1))
                 .to("langchain4j-agent:test-memory-agent?agentFactory=#class:org.apache.camel.forage.agent.factory.DefaultAgentFactory")
                 .log("${body}");
 
         from("timer:check?delay=5000&repeatCount=1")
                 .setBody(constant("What is my name?"))
-                .setHeader(Headers.MEMORY_ID, constant(1))
                 .to("langchain4j-agent:test-memory-agent?agentFactory=#class:org.apache.camel.forage.agent.factory.DefaultAgentFactory")
                 .log("${body}");
     }
