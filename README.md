@@ -4,7 +4,10 @@ A demonstration project showcasing the capabilities of [Camel Forage](https://gi
 
 ## Overview
 
-This demo demonstrates how to build an AI-powered Camel application using Camel Forage's plug-and-play components. The demo creates a simple chat agent with memory that can remember conversations across multiple interactions.
+This demo demonstrates how to build an AI-powered, memory-aware, Camel application using Camel Forage's plug-and-play components. The demo creates a simple chat agent with memory that can remember conversations across multiple interactions.
+
+> [NOTE]
+> For a memory-less example, check the [memory-less](https://github.com/orpiske/camel-forage-demo/tree/memory-less-example) branch.
 
 ## What This Demo Shows
 
