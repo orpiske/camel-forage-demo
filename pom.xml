@@ -63,7 +63,7 @@
         <!--This component adds a simple agent implementation -->
         <dependency>
             <groupId>org.apache.camel.forage</groupId>
-            <artifactId>forage-agent-simple</artifactId>
+            <artifactId>forage-agent-memory-aware</artifactId>
             <version>${camel-forage-version}</version>
         </dependency>
 
